@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/test.js"
+    "test": "mocha test/test.js",
+	"coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec && node node_modules/opn-cli/cli.js coverage/lcov-report/index.html"
   },
   "author": "",
   "license": "MIT",
