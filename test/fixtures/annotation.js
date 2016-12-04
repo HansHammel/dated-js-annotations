@@ -1,14 +1,17 @@
 // @timer 1990-01-01
+//noinspection JSUnusedGlobalSymbols
 function past() {
     console.log('past');
 }
 
 // @timer 2016-01-01
+//noinspection JSUnusedGlobalSymbols
 function presence() {
     console.log('presence');
 }
 
 // @timer 2100-01-01
+//noinspection JSUnusedGlobalSymbols
 function future() {
     console.log('future');
 }

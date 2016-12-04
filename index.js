@@ -1,5 +1,5 @@
 'use strict';
-var BombDetector = require('./lib/index.js');
+var BombDetector = require('./lib/scheduler.js');
 
  var init = function() {
         var bd = new BombDetector('lib/**/*.js', {});
@@ -13,8 +13,6 @@ var BombDetector = require('./lib/index.js');
             if (!module.parent) console.error('Exploded time bomb found in file: ' + bombs[0].file);
         }
 };
-
-
 
 //TODO: make model
 if (!module.parent) { init(); }
